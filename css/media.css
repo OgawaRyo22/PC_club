@@ -1,0 +1,32 @@
+ /*-- (mobile) --*/
+
+.mobile{
+    display: none;
+}
+
+@media all and (max-width: 400px){
+    
+    .pcmain{
+        display: none;
+    }
+    
+    .mobile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+}
+    
+    .h_iconmb{
+    height: 50px;
+    }
+    
+    .mb_img{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+}
