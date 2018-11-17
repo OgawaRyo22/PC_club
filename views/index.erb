@@ -8,65 +8,65 @@
     <style type="text/css">
 @font-face {
   font-family: "myFont";
-  src: url("css/Makinas-Scrap-5.eot?") format('eot'),
-       url("css/Makinas-Scrap-5.woff2") format('woff2'),
-       url("css/Makinas-Scrap-5.woff") format('woff');
+  src: url("/assets/css/Makinas-Scrap-5.eot?") format('eot'),
+       url("/assets/css/Makinas-Scrap-5.woff2") format('woff2'),
+       url("/assets/css/Makinas-Scrap-5.woff") format('woff');
 }
-        
-        
+
+
 @font-face {
   font-family: "myFont1";
-  src: url("css/pigmo.eot?") format('eot'),
-       url("css/pigmo.woff2") format('woff2'),
-       url("css/pigmo.woff") format('woff');
+  src: url("/assets/css/pigmo.eot?") format('eot'),
+       url("/assets/css/pigmo.woff2") format('woff2'),
+       url("/assets/css/pigmo.woff") format('woff');
 }
-        
+
 .myFont1Class {
   font-family: "myFont1";
 }
 
-        
+
 .myFontClass {
   font-family: "myFont";
 }
 
-        
+
 body {
   font-family: "myFont";
 }
 </style>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/media.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
 </head>
 <body>
     <div id="content">
       <div id="particles-js">
-          <script src="js/particles.min.js"></script>
+          <script src="/assets/js/particles.min.js"></script>
           <script>
           particlesJS("particles-js", {"particles":{"number":{"value":50,"density":{"enable":true,"value_area":320.6824121731046}},"color":{"value":["#f3554e"]},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":4},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":false,"anim":{"enable":false,"speed":0.9,"opacity_min":0.1,"sync":false}},"size":{"value":10.0255904649142,"random":true,"anim":{"enable":false,"speed":60,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":500,"color":"#ffffff","opacity":0.4,"width":2},"move":{"enable":true,"speed":1,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":0.5}},"bubble":{"distance":400,"size":1,"duration":0.3,"opacity":4,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
           </script>
-          
+
        <div id="content_1">
         <header class="pcmain">
         <div class="iconto">
-         <a class="h_img" href="index.html">
-                   <img class="h_icon" src="css/PC%E9%83%A8%E3%83%AD%E3%82%B4.png" >
+         <a class="h_img" href="/">
+                   <img class="h_icon" src="/assets/css/PC%E9%83%A8%E3%83%AD%E3%82%B4.png" >
         <!-- <video src="js/in1.mp4" autoplay poster="css/PC%E9%83%A8%E3%83%AD%E3%82%B4.png">
 <p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
 </video> --->
             </a>
 
           <ul>
-             <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="dailytop.html"><i class="fas fa-comments"></i>  活動内容</a></div></li>
-             
-             <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="loading.html"><i class="fas fa-info"></i>
+             <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/dailytop"><i class="fas fa-comments"></i>  活動内容</a></div></li>
 
-  部員の作品</a></div></li>
-              <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="dailytop.html"><i class="fas fa-comments"></i>  部員の日常</a></div></li>
-              <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="loading.html"><i class="fas fa-star"></i>  文化祭</a></div></li>
-              
+             <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/loading"><i class="fas fa-info"></i>
+
+  ゲーム作品</a></div></li>
+              <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/dailytop"><i class="fas fa-comments"></i>  部員の日常</a></div></li>
+              <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/loading"><i class="fas fa-star"></i>  文化祭</a></div></li>
+
           </ul>
             </div>
         <div class="but">
@@ -76,7 +76,7 @@ body {
         </header>
         <header class="mobile" >
             <a class="mb_img" href="index.html" >
-                   <img class="h_iconmb" src="css/PC%E9%83%A8%E3%83%AD%E3%82%B4.png">
+                   <img class="h_iconmb" src="/assets/css/PC%E9%83%A8%E3%83%AD%E3%82%B4.png">
         <!-- <video src="js/in1.mp4" autoplay poster="css/PC%E9%83%A8%E3%83%AD%E3%82%B4.png">
 <p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
 </video> --->
@@ -329,7 +329,7 @@ body {
                $('#particles-js').addClass('kuro');
                $('header').addClass('kurono');
                $('#content_1').addClass('kuroban');
-  
+
            });
            $('.akaruku').click(function(){
                $('.kuraku').removeClass('siroku');
@@ -344,18 +344,18 @@ body {
       <div id="main">
          <div class="main_con">
      <div class="main_naka">
-       
+
              </div>
               <div class="main_naka2">
-       
+
              </div>
          </div>
           </div>
            <footer>
-              
+
            </footer>
        </div>
-       
+
     </div>
 </body>
 </html>

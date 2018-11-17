@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PCclub</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <style type="text/css">
+@font-face {
+  font-family: "myFont";
+  src: url("/assets/css/Makinas-Scrap-5.eot?") format('eot'),
+       url("/assets/css/Makinas-Scrap-5.woff2") format('woff2'),
+       url("/assets/css/Makinas-Scrap-5.woff") format('woff');
+}
+body {
+  font-family: "myFont";
+}
+</style>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/media.css">
+    <script src="/assets/js/script.js"></script>
+</head>
+<body>
+    <div id="content" class="con_a">
+        <header class="he_b">
+             <a class="h_img" href="/">
+          <img class="h_icon" src="/assets/css/PC%E9%83%A8%E3%83%AD%E3%82%B4.png">
+            </a>
+          <ul>
+              <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/dailytop"><i class="fas fa-comments"></i>  日々の活動</a></div></li>
+              <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/loading"><i class="fas fa-star"></i>  イベント</a></div></li>
+              <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/loading"><i class="fas fa-book"></i>
+
+  コラム</a></div></li>
+              <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/loading"><i class="fas fa-info"></i>
+
+  作品たち</a></div></li>
+              <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/loading"><i class="fas fa-plug"></i>
+
+  その他</a></div></li>
+          </ul>
+        </header>
+        <div id="container">
+            <div class="actives">
+                <h1><span>Archives</span></h1>
+
+                <div class="a_list">
+                 <div class="box-a a2018">
+                     <p class="nenn">2017</p>
+                     <p class="nena">ARCHIVES LIST</p>
+                 </div>
+                 <% @posts.each do |post| %>
+                 <a href=""><div class="box-a hona">
+                     <p><%= post.date %></p>
+                     <p class="dis"><%= post.title %></p>
+                     </div></a>
+                <% end %>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+</html>

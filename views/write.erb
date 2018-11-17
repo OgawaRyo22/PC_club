@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+   function gate() {
+      var UserInput = prompt("パスワードを入力して下さい:","");
+      location.href = UserInput + ".html";
+   }
+</script>
+
+<form action="/write" method="post">
+
+<input type="text" name="title">
+<input type="date" name="date">
+<textarea name="content" rows="20" cols="100"></textarea>
+<input type="submit" value="送信!">
+
+</form>
+
+<script>
+
+  $('.edit_fo').click(function(){
+     $('.edit_ran').css("display", "block!important");
+  })
+</script>
+
+ <% @posts.each do |post| %>
+ <form action="/vote/<%= post.id %>/delete" method="post">
+ <input type="submit" value="消す">
+ </form>
+ <button class="edit_fo">編集</button>
+ <div class="edit_ran">
+<form action="/vote/<%= post.id %>/edit" method="post">
+  <input type="text" name="title" value="<%= post.title %>">
+  <textarea rows="20" cols="100" name="content" value="<%= post.content %>"></textarea>
+  <input type="submit" value="送信!">
+</form>
+</div>
+               <div class="">
+                     <p><%= post.date %></p>
+                     <p class=""><%= post.title %></p>
+                     </div>
+                <% end %>
+
+</body>
+</html>
