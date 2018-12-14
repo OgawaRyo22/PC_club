@@ -126,7 +126,7 @@ header{
     display: flex;
     justify-content: space-between;
     height: 200px;
-    width: 1265px;
+    width: 100%;
     margin: 0 auto;
     transition: 2.0s;
 }
@@ -150,20 +150,20 @@ header{
 }
 
 header .iconto{
-    width: calc(80% + 100px);
+    width: calc(90% + 100px);
     display: flex;
 }
 
 header ul{
-    display: flex;
-    justify-content: flex-start;
+   display: flex;
+    justify-content: flex-end;
     align-items: center;
-    margin-left: 5px;
+    margin-right: 8%;
     width: 100%;
 }
 
 header li{
-    margin-left: 70px;
+    margin-left: 10%;
 }
 
 .bt-4{
@@ -230,7 +230,7 @@ header .bt-4 a:hover{
 
 
 #content_1{
-    width: 1280px;
+    width: 100%;
     margin: 0 auto;
     height: 86vh;
     position: relative;
@@ -610,6 +610,7 @@ transition-delay: ;
     transform: skewX(-10deg);
     left: 22px;
     background:  linear-gradient(transparent 60%, #f3da0c 60%);
+    font-weight: bold;
     color: #fff;
     font-size: 31px;
 }
@@ -778,7 +779,7 @@ footer{
 #particles-js{
     position:absolute;
     width: 100%;
-    height: 1200px;
+    height: 120%;
     background-color: #fff;
     transition: 2.0s;
     background-image: url("");
