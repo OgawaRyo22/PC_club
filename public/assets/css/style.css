@@ -219,10 +219,10 @@ header .bt-4 a:hover{
     bottom: 0;
     /* padding-right: 20px; */
     border-right: 40px #f93b3b solid;
-    left: -190px;
+    left: -210px;
     background: #3F51B5;
     position: absolute;
-        transition: all .7s cubic-bezier(0.74, 0.09, 0.25, 1);
+    transition: all 0.7s cubic-bezier(0.88, 0.04, 0.4, 0.98) 0s;
 }
  .bt-4:hover .eff-5{
   left:0;
@@ -610,7 +610,6 @@ transition-delay: ;
     transform: skewX(-10deg);
     left: 22px;
     background:  linear-gradient(transparent 60%, #f3da0c 60%);
-    font-weight: bold;
     color: #fff;
     font-size: 31px;
 }
