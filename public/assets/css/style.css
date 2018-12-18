@@ -48,7 +48,7 @@ li{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-right: 100px;
+    margin-right: 6.5%;
 }
 
 .akaruku{
@@ -135,12 +135,14 @@ header{
 .h_img{
     display: flex;
     align-items: center;
-       margin-left: 100px;
+       margin-left: 8%;
     transition: 1.0s;
+justify-content: center;
+    width: 12%;
 }
 
 .h_icon{
-    width: 100px;
+    width: calc(100% + 0.5vw);
     transition: 0.3s;
 }
 
@@ -150,7 +152,7 @@ header{
 }
 
 header .iconto{
-    width: calc(90% + 100px);
+    width: calc(90% + 10%);
     display: flex;
 }
 
@@ -173,7 +175,7 @@ header li{
 
 header a{
     color: #333;
-    font-size: 22px;
+    font-size: calc(96.5% + 0.5vw);
     transition: 2.0s;
     position: relative;
 }
@@ -186,7 +188,7 @@ header .bt-4 a{
 }
 
 header .bt-4 a:hover{
-    font-size: 22px;
+
     transition: .5s ease;
 }
 
@@ -199,30 +201,28 @@ header .bt-4 a:hover{
 
 
 .eff-4 {
-    width: 160px;
+       width: 160px;
     height: 3px;
-    bottom: 0;
+    bottom: 0px;
     left: -225px;
     transform: skewX(-30deg);
-    background: #e2bb0e;
-    border-right: 60px #57af4c solid;
     position: absolute;
-    transition: all 1s cubic-bezier(0.64, 0.04, 0.42, 0.99);
-    transition-delay: 0.1s;
+    background: rgb(226, 187, 14);
+    border-right: 60px solid rgb(63, 81, 181);
+    transition: all 1.5s cubic-bezier(0.42, 0.49, 0, 0.97) 0.1s;
 }
  .bt-4:hover .eff-4{
   left:0;
 }
 .eff-5{
-    width: 150px;
+     width: 150px;
     height: 3px;
-    bottom: 0;
-    /* padding-right: 20px; */
-    border-right: 40px #f93b3b solid;
-    left: -210px;
-    background: #3F51B5;
+    bottom: 0px;
+    left: -190px;
     position: absolute;
-    transition: all 0.7s cubic-bezier(0.88, 0.04, 0.4, 0.98) 0s;
+    border-right: 40px solid rgb(249, 59, 59);
+    background: rgb(63, 81, 181);
+    transition: all 1.1s ease 0s;
 }
  .bt-4:hover .eff-5{
   left:0;
@@ -302,7 +302,7 @@ svg#レイヤー_1 {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-      background-image: url("PC部紹介背景.png");
+      background-image: url("");
     background-size: cover;
     width:  100%;
     height: 1300px;
@@ -497,7 +497,7 @@ transition-delay: ;
 /*---- dailytop.container ----*/
 
 .con_a{
-    background-image: url("achi.png");
+    background-image: url("eye.png");
     background-size: cover;
 }
 
