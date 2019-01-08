@@ -24,6 +24,15 @@
 
 </form>
 
+<form action="/gameadd" method="post">
+<input type="text" name="title" placeholder="タイトル">
+<input type="date" name="date">
+<textarea name="description" rows="20" cols="100" placeholder="ゲームについて"></textarea>
+<input type="text" name="creator" placeholder="作成者">
+<input type="text" name="link" placeholder="URL">
+<input type="submit" name="送信！">
+</form>
+
 <script>
 
   $('.edit_fo').click(function(){
@@ -46,6 +55,29 @@
                <div class="">
                      <p><%= post.date %></p>
                      <p class=""><%= post.title %></p>
+                     </div>
+                <% end %>
+
+                <% @games.each do |game| %>
+ <form action="/rpg/<%= game.id %>/delete" method="post">
+ <input type="submit" value="消す">
+ </form>
+ <button class="edit_fo">編集</button>
+ <div class="edit_ran">
+<form action="/rpg/<%= game.id %>/edit" method="post">
+  <input type="text" name="title" value="<%= game.title %>" placeholder="タイトル">
+  <input type="text" name="link" value="<%= game.link %>" placeholder="URl">
+  <input type="text" name="creator" value="<%= game.creator %>" placeholder="作成者">
+  <textarea rows="20" cols="100" name="description" value="<%= game.description %>" placeholder="ゲームについて"></textarea>
+  <input type="submit" value="送信!">
+</form>
+</div>
+               <div class="">
+                     <p><%= game.date %></p>
+                     <p class=""><%= game.title %></p>
+                     <p class=""><%= game.description %></p>
+                     <p class=""><%= game.creator %></p>
+                     <p class=""><%= game.link %></p>
                      </div>
                 <% end %>
 

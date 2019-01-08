@@ -19,6 +19,7 @@ body {
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/media.css">
     <script src="/assets/js/script.js"></script>
+    
 </head>
 <body>
     <div id="content" class="con_a">
@@ -27,9 +28,9 @@ body {
           <img class="h_icon" src="/assets/css/PClogo.png">
             </a>
           <ul>
-             <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/dailytop"><i class="fas fa-comments"></i>  活動内容</a></div></li>
+             <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="#"><i class="fas fa-comments"></i>  活動内容</a></div></li>
 
-             <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/loading"><i class="fas fa-info"></i>
+             <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="#"><i class="fas fa-info"></i>
 
   ゲーム作品</a></div></li>
               <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/dailytop"><i class="fas fa-comments"></i>  部員の日常</a></div></li>
@@ -54,6 +55,37 @@ body {
                 <% end %>
                 </div>
             </div>
+         
+            <script src="/assets/js/basicScroll.min.js"></script>
+             <script>
+                 
+                
+         const instance = basicScroll.create({
+	elem: document.querySelector('.actives'),
+    direct: document.querySelector('.actives'),
+	from: 'top-middle',
+   to: 'bottom-bottom',
+
+	props: {
+		'--scroll': {
+			from: '60px',
+			to: '-60px'
+		}
+	}
+})
+ 
+instance.start()
+         
+         </script>
+               <style>
+                .actives{
+                     transform: translateY(var(--scroll));
+                }
+                   
+                   header{
+                     transform: translateY(var(--scroll));
+                   }
+            </style>
         </div>
         <footer></footer>
     </div>

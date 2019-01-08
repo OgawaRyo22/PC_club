@@ -10,6 +10,11 @@ class Post < ActiveRecord::Base
        presence: true
 end
 
+class Game < ActiveRecord::Base
+        validates :title,
+       presence: true
+end
+
 
 if development?
 ActiveRecord::Base.establish_connection("sqlite3:db/development.db")

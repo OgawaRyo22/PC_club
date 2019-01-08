@@ -21,6 +21,20 @@
        url("/assets/css/pigmo.woff") format('woff');
 }
 
+
+@font-face {
+  font-family: "myFont2";
+  src: url("/assets/css/dot.eot?") format('eot'),
+       url("/assets/css/dot.woff2") format('woff2'),
+       url("/assets/css/dot.woff") format('woff');
+}
+        
+
+.myFontClass {
+  font-family: "myFont2";
+}
+        
+        
 .myFont1Class {
   font-family: "myFont1";
 }
@@ -39,29 +53,35 @@ body {
     <link rel="stylesheet" href="/assets/css/media.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/script2.js"></script>
+    <script src="/assets/js/delighters.js"></script>
+    <script src="/assets/js/basicScroll.min.js"></script>
 </head>
 <body>
     <div id="content">
       <div id="particles-js">
-          <script src="/assets/js/particles.min.js"></script>
-          <script>
+<!--          <script src="/assets/js/particles.min.js"></script>-->
+         <script type="text/javascript" src="/assets/js/particles.min.js"></script>
+         <script>
           particlesJS("particles-js", {"particles":{"number":{"value":50,"density":{"enable":true,"value_area":320.6824121731046}},"color":{"value":["#f3554e"]},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":4},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":false,"anim":{"enable":false,"speed":0.9,"opacity_min":0.1,"sync":false}},"size":{"value":10.0255904649142,"random":true,"anim":{"enable":false,"speed":60,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":500,"color":"#ffffff","opacity":0.4,"width":2},"move":{"enable":true,"speed":1,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":0.5}},"bubble":{"distance":400,"size":1,"duration":0.3,"opacity":4,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
           </script>
-
        <div id="content_1">
+
         <header class="pcmain">
         <div class="iconto">
+    
          <a class="h_img" href="/">
-                   <img class="h_icon" src="/assets/css/PClogo.png" >
-        <!-- <video src="js/in1.mp4" autoplay poster="css/PC%E9%83%A8%E3%83%AD%E3%82%B4.png">
-<p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
-</video> --->
+                   
+                  <div class="h_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 389" width="600" height="389" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);"><defs><clipPath id="animationMask_X1sy4meUkA"><rect width="600" height="389" x="0" y="0"></rect></clipPath><clipPath id="cp_JWFgBwEM"><path d="M0,0 L600,0 L600,389 L0,389z"></path></clipPath></defs><g clip-path="url(#animationMask_X1sy4meUkA)"><g clip-path="url(#cp_JWFgBwEM)" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g transform="matrix(1,0,0,1,0,-5.5)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,300,200)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(51,51,51)" stroke-opacity="1" stroke-width="39" d=" M212.55599975585938,172.51699829101562 C212.55599975585938,172.51699829101562 -212.55499267578125,172.51699829101562 -212.55499267578125,172.51699829101562 C-247.61000061035156,172.51699829101562 -276.0270080566406,144.10000610351562 -276.0270080566406,109.0459976196289 C-276.0270080566406,109.0459976196289 -276.0270080566406,-109.04499816894531 -276.0270080566406,-109.04499816894531 C-276.0270080566406,-144.10000610351562 -247.61000061035156,-172.51699829101562 -212.55499267578125,-172.51699829101562 C-212.55499267578125,-172.51699829101562 212.55599975585938,-172.51699829101562 212.55599975585938,-172.51699829101562 C247.61099243164062,-172.51699829101562 276.0270080566406,-144.10000610351562 276.0270080566406,-109.04499816894531 C276.0270080566406,-109.04499816894531 276.0270080566406,109.0459976196289 276.0270080566406,109.0459976196289 C276.0270080566406,144.10000610351562 247.61099243164062,172.51699829101562 212.55599975585938,172.51699829101562z"></path></g></g><g transform="matrix(1,0,0,1,0,-5.5)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,168.91900634765625,142.1060028076172)"><path fill="rgb(51,51,51)" fill-opacity="1" d=" M43.130001068115234,0 C43.130001068115234,23.81999969482422 23.819000244140625,43.12900161743164 0,43.12900161743164 C-23.81999969482422,43.12900161743164 -43.130001068115234,23.81999969482422 -43.130001068115234,0 C-43.130001068115234,-23.819000244140625 -23.81999969482422,-43.12900161743164 0,-43.12900161743164 C23.819000244140625,-43.12900161743164 43.130001068115234,-23.819000244140625 43.130001068115234,0z"></path><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(51,51,51)" stroke-opacity="1" stroke-width="1" d=" M43.130001068115234,0 C43.130001068115234,23.81999969482422 23.819000244140625,43.12900161743164 0,43.12900161743164 C-23.81999969482422,43.12900161743164 -43.130001068115234,23.81999969482422 -43.130001068115234,0 C-43.130001068115234,-23.819000244140625 -23.81999969482422,-43.12900161743164 0,-43.12900161743164 C23.819000244140625,-43.12900161743164 43.130001068115234,-23.819000244140625 43.130001068115234,0z"></path></g></g><g transform="matrix(1,0,0,1,0,-5.5)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,302,279.3160095214844)"><path fill="rgb(51,51,51)" fill-opacity="1" d=" M0,34.50400161743164 C0,34.50400161743164 43.12900161743164,-34.50299835205078 43.12900161743164,-34.50299835205078 C43.12900161743164,-34.50299835205078 -43.12900161743164,-34.50299835205078 -43.12900161743164,-34.50299835205078 C-43.12900161743164,-34.50299835205078 0,34.50400161743164 0,34.50400161743164z"></path><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(51,51,51)" stroke-opacity="1" stroke-width="1" d=" M0,34.50400161743164 C0,34.50400161743164 43.12900161743164,-34.50299835205078 43.12900161743164,-34.50299835205078 C43.12900161743164,-34.50299835205078 -43.12900161743164,-34.50299835205078 -43.12900161743164,-34.50299835205078 C-43.12900161743164,-34.50299835205078 0,34.50400161743164 0,34.50400161743164z"></path></g></g><g transform="matrix(1,0,0,1,0,-5.5)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,435.08099365234375,142.1060028076172)"><path fill="rgb(51,51,51)" fill-opacity="1" d=" M43.12900161743164,0 C43.12900161743164,23.81999969482422 23.819000244140625,43.12900161743164 -0.0010000000474974513,43.12900161743164 C-23.81999969482422,43.12900161743164 -43.130001068115234,23.81999969482422 -43.130001068115234,0 C-43.130001068115234,-23.819000244140625 -23.81999969482422,-43.12900161743164 -0.0010000000474974513,-43.12900161743164 C23.819000244140625,-43.12900161743164 43.12900161743164,-23.819000244140625 43.12900161743164,0z"></path><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(51,51,51)" stroke-opacity="1" stroke-width="1" d=" M43.12900161743164,0 C43.12900161743164,23.81999969482422 23.819000244140625,43.12900161743164 -0.0010000000474974513,43.12900161743164 C-23.81999969482422,43.12900161743164 -43.130001068115234,23.81999969482422 -43.130001068115234,0 C-43.130001068115234,-23.819000244140625 -23.81999969482422,-43.12900161743164 -0.0010000000474974513,-43.12900161743164 C23.819000244140625,-43.12900161743164 43.12900161743164,-23.819000244140625 43.12900161743164,0z"></path></g></g></g></g></svg></div>
+     
             </a>
+            
+            
 
           <ul>
-             <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/dailytop"><i class="fas fa-comments"></i>  活動内容</a></div></li>
+             <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="#"><i class="fas fa-comments"></i>  活動内容</a></div></li>
 
-             <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/loading"><i class="fas fa-info"></i>
+             <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="#"><i class="fas fa-info"></i>
 
   ゲーム作品</a></div></li>
               <li><div class="bt-4"><div class="eff-5"></div><div class="eff-4"></div><a href="/dailytop"><i class="fas fa-comments"></i>  部員の日常</a></div></li>
@@ -75,12 +95,7 @@ body {
         </div>
         </header>
         <header class="mobile" >
-            <a class="mb_img" href="index.html" >
-                   <img class="h_iconmb" src="/assets/css/pclogo.png">
-        <!-- <video src="js/in1.mp4" autoplay poster="css/PC%E9%83%A8%E3%83%AD%E3%82%B4.png">
-<p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
-</video> --->
-            </a>
+           
         </header>
         <div class="top_m">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="レイヤー_1" x="0px" y="0px" viewBox="0 0 1900 600" style="enable-background:new 0 0 1900 600;" xml:space="preserve">
@@ -338,22 +353,151 @@ body {
                $('.akaruku').removeClass('tukeru');
                $('#content_1').removeClass('kuroban');
            });
+         
            </script>
+           <script>
+           
+           </script>
+           
+
        </div>
 
       <div id="main">
          <div class="main_con">
      <div class="main_naka">
+         <div class="main1con">
+         <div class="titlebox" data-delighter>
+           
+       <p class="ac_h"><span>活</span><span>動</span><span>内</span><span>容</span></p>
+      
 
+         </div>
+         <div class="kukuri top" data-delighter>
+          <p class="l" onclick="plusSlides(-1)">＜</p>
+         <div class="each_cat">
+             <div class="pro"></div>
+             <div class="game"></div>
+             <div class="fes"></div>
+         </div>
+          <p class="r" onclick="plusSlides(1)">＞</p>
+         </div>
+         <div class="select left" data-delighter>
+           
+   
+         <p class="each_ti seleti pro_ti"><span>プ</span>ログラミング</p>
+    <p class="each_ti seleti game_ti"><span>ゲ</span>ーム制作</p>
+         <p class="each_ti seleti fes_ti"><span>久</span>我山祭</p>
+
+             
+         </div>
+      
+           
+             </div>
              </div>
               <div class="main_naka2">
-
+              <p class="gamein right" data-delighter><span>ゲ</span><span>ー</span><span>ム</span><span>作</span><span>品</span></p>
+   <div class="tskuru top" data-delighter>
+       <p class="g_l yazi" onclick="plusGames(-1)" >＜</p><% @games.each do |game| %><div class="frame"><div class="onoff"><input type="button" value="ゲームを始める" onclick="gameFrame<%= game.id %>.src='<%= game.link %>'; gameFrame<%= game.id %>.focus();"/> <input type="button" value="ゲームを止める" onclick="gameFrame<%= game.id %>.src='';"/>
+                 <p><%= game.date %></p>
+                     <p><%= game.title %></p>
+                     <p><%= game.description %></p>
+                     <p><%= game.creator %></p>
+                 </div><iframe id="gameFrame<%= game.id %>" class="rpg" allowfullscreen src="" sandbox="allow-same-origin allow-scripts"></iframe></div><% end %><p onclick="plusGames(1)" class="g_r yazi">＞</p>
+                  </div>
              </div>
          </div>
+         
+         <script>
+         var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("each_ti");
+  
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+       slides[i].style.opacity = "0";  
+  }
+  slides[slideIndex-1].style.opacity = "1";  
+
+}
+          
+          </script>
+          
+          <script>
+         var gameIndex = 1;
+showGames(gameIndex);
+
+function plusGames(n) {
+  showGames(gameIndex += n);
+}
+
+function currentGame(n) {
+  showGames(gameIndex = n);
+}
+
+function showGames(n) {
+  var i;
+  var games = document.getElementsByClassName("frame");
+  
+  if (n > games.length) {gameIndex = 1}    
+  if (n < 1) {gameIndex = games.length}
+  for (i = 0; i < games.length; i++) {
+       games[i].style.display = "none";  
+  }
+  games[gameIndex-1].style.display = "flex";  
+
+}
+          
+          </script>
           </div>
            <footer>
 
            </footer>
+          
+              <script>
+                
+         const instance = basicScroll.create({
+	elem: document.querySelector('.main1con'),
+    direct: document.querySelector('.main1con'),
+	from: 'top-top',
+	to: 'middle-middle',
+
+	props: {
+		'--transform': {
+			from: '0px',
+			to: '30px'
+		},
+        '--opacicy': {
+			from: '1',
+			to: '0'
+		}
+	}
+})
+ 
+instance.start()
+              
+         
+         </script>
+               <style>
+                .main1con{
+                     transform: translateY(var(--transform));
+                        width: 100vw;
+                    overflow: hidden;
+                    opacity: var(--opacicy);
+    height: 100%;
+                }
+            </style>
        </div>
 
     </div>

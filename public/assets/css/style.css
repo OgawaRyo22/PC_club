@@ -3,8 +3,69 @@
 
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
 
+.left.delighter{
+transition: 1.5s cubic-bezier(0.38, 0.6, 0.25, 1);
+      transform: translateX(30%);
+      opacity: 0;
+}
+
+.left.delighter.started{
+    transition: 1.5s cubic-bezier(0.38, 0.6, 0.25, 1);
+   transform: none;
+      opacity: 1;
+}
+
+.left.delighter.started.ended{
+    transition: 1.5s cubic-bezier(0.38, 0.6, 0.25, 1);
+      transform: none;
+      opacity: 1;
+}
+
+.right.delighter{
+transition: 1.5s cubic-bezier(0.38, 0.6, 0.25, 1);
+      transform: translateX(-30%);
+      opacity: 0;
+}
+
+.right.delighter.started{
+    transition: 1.5s cubic-bezier(0.38, 0.6, 0.25, 1);
+   transform: none;
+      opacity: 1;
+}
+
+.right.delighter.started.ended{
+    transition: 1.5s cubic-bezier(0.38, 0.6, 0.25, 1);
+      transform: none;
+      opacity: 1;
+}
+
+.top.delighter{
+transition: 1.5s cubic-bezier(0.38, 0.6, 0.25, 1);
+      transform: translateY(30%);
+      opacity: 0;
+}
+
+.top.delighter.started{
+    transition: 1.5s cubic-bezier(0.38, 0.6, 0.25, 1);
+   transform: none;
+      opacity: 1;
+}
+
+.top.delighter.started.ended{
+    transition: 1.5s cubic-bezier(0.38, 0.6, 0.25, 1);
+      transform: none;
+      opacity: 1;
+}
+
+
+
 body{
-        overflow-y:visible;
+        overflow-y:scroll;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
 }
 
 a{
@@ -15,15 +76,32 @@ body::-webkit-scrollbar{
         display: none;
 }
 
+html{
+    overflow: scroll;
+}
+
 
 *{
     margin: 0;
     padding: 0;
+  
 }
+
+div{
+
+}
+
+
 
 a{
     text-decoration: none;
+    cursor : pointer;
+    will-change: transform;
 
+}
+
+p{
+ will-change: transform;
 }
 
 li{
@@ -33,8 +111,18 @@ li{
 
 /* ---------- Content ---------- {*/
 
+body{
+
+}
+
+.s1{
+   top: 11%;
+}
 
 
+.sc2{
+   margin-top: -120%;
+}
 
 /*---- header ----*/
 
@@ -135,15 +223,17 @@ header{
 .h_img{
     display: flex;
     align-items: center;
-       margin-left: 8%;
+       margin-left: 80px;
     transition: 1.0s;
 justify-content: center;
     width: 12%;
 }
 
 .h_icon{
-    width: calc(100% + 0.5vw);
+  width: 100px;
+    display: flex;
     transition: 0.3s;
+    align-items: center;
 }
 
 .h_icon:hover{
@@ -160,12 +250,12 @@ header ul{
    display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 8%;
+    margin-right: 100px;
     width: 100%;
 }
 
 header li{
-    margin-left: 10%;
+    margin-left: 100px;
 }
 
 .bt-4{
@@ -175,7 +265,7 @@ header li{
 
 header a{
     color: #333;
-    font-size: calc(96.5% + 0.5vw);
+    font-size: 20px;
     transition: 2.0s;
     position: relative;
 }
@@ -234,6 +324,7 @@ header .bt-4 a:hover{
     margin: 0 auto;
     height: 86vh;
     position: relative;
+
 }
 
 #content_1::-webkit-scrollbar{
@@ -259,7 +350,7 @@ svg.topg{
 }
 
 svg#レイヤー_1 {
-    z-index: 10000000;
+    z-index: -1;
     width: 100%;
     margin-top: -275px;
 }
@@ -279,20 +370,24 @@ svg#レイヤー_1 {
     width: 100%;
     height: 100%;
 
-    background-image: url("haikei.png");
-    background-size: cover;
+
+
 }
 
 .main_naka{
-
+margin-top: -8px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+   position: relative;
     margin: 0 auto;
-    width:  1065px;
-    height: 1300px;
-    align-items: center;
+width: 100vw;
+    background-image: url("hai_ue.png");
+     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: baseline;
+
 }
 
 .main_naka2{
@@ -300,199 +395,309 @@ svg#レイヤー_1 {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
+    width: 100vw;
     justify-content: center;
+    background-image: url("hai_sita.png");
     margin: 0 auto;
-      background-image: url("");
-    background-size: cover;
-    width:  100%;
-    height: 1300px;
-    align-items: center;
+ background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+
 }
 
-.box-1{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    height: 1000px;
-    align-items: center;
-}
+.titlebox{
 
-.box-1 img{
-    height: 350px;
-    box-shadow: 12px 12px 0px 1px #333;
-    margin-top: -100px;
-}
-
-.modi{
-    color: #333;
-    display: flex;
-    height: 350px;
-    flex-wrap: wrap;
-    width: 500px;
-    margin-bottom: -100px;
-    align-items: center;
-}
-
-.modi p{
-    color: #fff;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    text-shadow: 2px 2px 2px #77777799;
-   /* text-shadow:  0.5px 0.5px #333333b3, 1px 1px #333333b3, 1.5px 1.5px #333333b3, 2px 2px #333333b3;*/
-}
-
-.right1 .modi p{
-    margin-bottom: 15px;
-    margin-top: 15px;
-    text-shadow: none;
-    /* text-shadow:  0.5px 0.5px #ffffffb3, 1px 1px #ffffffb3, 1.5px 1.5px #ffffffb3, 2px 2px #ffffffb3; */
-}
-
-.right .modi{
-    margin-left: 100px;
-    margin-bottom: -15px;
-}
-.right1 .modi{
-    margin-left: 100px;
-    margin-bottom: -15px;
-}
-.left .modi{
-    margin-right: 100px;
-    margin-bottom: -15px;
-}
-
-.modi h2{
-    font-size: 55px;
-    color: #0EA3E2;
-}
-
-.right h2{
-    font-size: 53px;
-}
-
-.modi p{
-    font-size: 23px;
-}
-
-.right1 p{
-    color: #333;
-}
-
-.modi a{
-    font-size: 21px;
-    color: #fff;
-    padding: 30px 0px 30px 0px;
-    display: block;
-    z-index: 2;
     position: relative;
+    margin-top: 70px;
+    height: 80px;
+    margin-left: calc(80px - 60px);
+}
+
+.titlebox div{
+    position: absolute;
+}
+
+
+.ac_h{
+    color: #00a7e2;
+   widows: 800px;
+    font-size: 50px;
+       text-align: left;
+    margin-left: 60px;
+}
+
+.ac_h span{
+    background-color: #fff;
+
+    margin-right: 50px;
+
+    box-shadow:  6.0px 6.0px #333;
+
+}
+
+.eachbox{
+
+    background-color: #333;
+    width: 500px;
+    height: 270px;
+    box-shadow: 0px 0px 4px 2px #33333322;
+}
+
+.each_con{
+    width: 80%;
+    margin-left: 30px;
+    height: 180px;
+    border-bottom: 2px #fff solid;
+}
+
+.each_ti{
+    transition: .7s cubic-bezier(0.38, 0.6, 0.25, 1);
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    text-align: right;
+    justify-content: flex-end;
+    width: 100%;
+     right: 0;
+    margin-left: 60px;
+    font-size: 50px;
+    letter-spacing: 40px;
+}
+
+.ani_l{
+    animation: slide_l 2s both;
+}
+
+.ani_r{
+    animation: slide_r 2s both;
+}
+
+@keyframes slide_l{
+    0%{
+        transform: translateX(0px);
+    }
+
+    100%{
+        transform: translateX(-200px);
+    }
+
+}
+
+@keyframes slide_r{
+    0%{
+        transform: translateX(0px);
+    }
+
+    100%{
+        transform: translateX(200px);
+    }
+
+}
+
+.select{
+    position: absolute;
+transition: 1.5s cubic-bezier(0.38, 0.6, 0.25, 1);
+    width: 720px;
+    right: calc(80px - 40px);
+    display: flex;
+    bottom: 50px;
+    justify-content: flex-end;
+}
+
+
+
+.select button{
+    width: 120px;
+    height: 120px;
+    border-radius: 70px;
+    border: none;
+    background-color: #33333300;
+    position: relative;
+    color: #333;
+    font-size: 60px;
     text-align: center;
 }
 
+.each_ti{
+    text-shadow: 6.0px 6.0px #333;
 
-
-.eff-6{
-width: 200px;
-    height: 95px;
-    left: -270px;
-border-right: 40px #fff solid;
-    position: absolute;
-    transform:skewX(-30deg);
-transition-delay: ;
-    transition: all 0.9s ease;
 }
 
-.right1 .eff-6{
-width: 200px;
-    height: 95px;
-    left: -290px;
-border-right: 40px #333 solid;
-    position: absolute;
-    transform:skewX(-30deg);
-transition-delay: ;
-    transition: all 0.9s ease;
-}
-
-.bt-4:hover .eff-6{
-    left: 70px;
-}
-
-.right h2{
-    color: #ffffff;
-}
-
-.right1 h2{
-    color: #333;
-}
-
-.left h2{
-    color: #ffffff;
-}
-
-.right .bt-4{
-    width: 200px;
-    border: 3px #fff solid;
-    box-shadow: 2px 2px 2px #77777799;
-    border-radius: 18px;
-}
-
-.left .bt-4{
-    width: 200px;
-    box-shadow: 2px 2px 2px #77777799;
-    border: 3px #fff solid;
-    border-radius: 18px;
-}
-
-.right1 .bt-4{
-    width: 240px;
-
-    border: 3px #333 solid;
-    border-radius: 18px;
-}
-
-.right1 .modi a{
-    color: #333;
-}
-
-.right1 img{
-    width: 500px;
-}
-
-.modi h2{
-    background:  linear-gradient(transparent 60%, #333 60%);
-    transform: skewX(-10deg);
-    text-shadow: 2px 2px 0px #333333b3, 1.5px 1.5px 0px #333333b3, 1px 1px 0px #333333b3, 0.5px 0.5px 0px #333333b3;
-    margin-left: 13px;
-}
-
-.right1 .modi h2{
-    background:  linear-gradient(transparent 60%, #ef2a33 60%);
-    transform: skewX(-10deg);
-    text-shadow: 1px 1px 0px #ffffff, 2px 2px 0px #333333b3;
-    font-family: myfont1;
-    font-size: 60px;
-}
-
-.right .modi h2 span{
-    text-shadow: 1px 1px 0px #f562d5, 2px 2px 0px #f562d5, 3px 3px 0px #f562d5, 4px 4px 0px #f562d5, 6px 6px 0px #333333b3;
-    -ms-text-shadow: 1px 1px 0px #f562d5, 2px 2px 0px #f562d5, 3px 3px 0px #f562d5, 4px 4px 0px #f562d5, 6px 6px 0px #333333b3;
-    -o-text-shadow: 1px 1px 0px #f562d5, 2px 2px 0px #f562d5, 3px 3px 0px #f562d5, 4px 4px 0px #f562d5, 6px 6px 0px #333333b3;
+.pro_ti span{
     font-size: 80px;
-    color: #333;
-}
-
-.left .modi h2 span{
-    text-shadow: 1px 1px 0px #efd91f,2px 2px 0px #efd91f,3px 3px 0px #efd91f,4px 4px 0px #efd91f, 6px 6px 0px #333333b3;
-    -ms-text-shadow: 1px 1px 0px #efd91f,2px 2px 0px #efd91f,3px 3px 0px #efd91f,4px 4px 0px #efd91f, 6px 6px 0px #333333b3;
-    font-size: 80px;
-    color: #333;
-}
-
-.right1 .modi h2 span{
-    text-shadow: 0.5px 0.5px 0px #ef1f32,1px 1px 0px #ef1f32,1.5px 1.5px 0px #ef1f32,2px 2px 0px #ef1f32,2.5px 2.5px 0px #ef1f32,3px 3px 0px #ef1f32,3.5px 3.5px 0px #ef1f32,4px 4px 0px #ef1f32, 6px 6px 0px #333333b3;
-    filter:dropshadow(color=#ef1f32,offX=0.5,offY=0.5);
-    font-size: 80px;
+    text-shadow: 0.5px 0.5px #384fd6,1.0px 1.0px #384fd6,
+       1.5px 1.5px #384fd6, 2.0px 2.0px #384fd6,2.5px 2.5px #384fd6, 3.0px 3.0px #384fd6, 3.5px 3.5px #384fd6, 4.0px 4.0px #384fd6, 6.0px 6.0px #333;
+    margin-top: -38px;
     color: #fff;
 }
+
+.game_ti span{
+    font-size: 80px;
+    text-shadow: 0.5px 0.5px #384fd6,1.0px 1.0px #384fd6,
+       1.5px 1.5px #384fd6, 2.0px 2.0px #384fd6,2.5px 2.5px #384fd6, 3.0px 3.0px #384fd6, 3.5px 3.5px #384fd6, 4.0px 4.0px #384fd6, 6.0px 6.0px #333;
+    margin-top: -38px;
+    color: #fff;
+}
+
+.fes_ti span{
+    font-size: 80px;
+    text-shadow: 0.5px 0.5px #e63c35,1.0px 1.0px #e63c35,
+       1.5px 1.5px #e63c35, 2.0px 2.0px #e63c35,2.5px 2.5px #e63c35, 3.0px 3.0px #e63c35, 3.5px 3.5px #e63c35, 4.0px 4.0px #e63c35, 6.0px 6.0px #333;
+    margin-top: -38px;
+    color: #fff;
+}
+
+
+.kukuri{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 60px;
+        position: absolute;
+    top: 45%;
+}
+
+.kukuri p{
+    text-shadow: 0.5px 0.5px #fff,1.0px 1.0px #333,
+       1.5px 1.5px #333, 2.0px 2.0px #00a7e2,2.5px 2.5px #333, 3.0px 3.0px #333, 3.5px 3.5px #333, 4.0px 4.0px #333, 6.0px 6.0px #333
+}
+
+.kukuri .l{
+    margin-left: 30px;
+    cursor : pointer;
+    transition: .4s cubic-bezier(0.9, 0.03, 0.04, 1.01);
+}
+
+.kukuri .r{
+    margin-right: 30px;
+    cursor : pointer;
+     transition: .4s cubic-bezier(0.9, 0.03, 0.04, 1.01);
+}
+
+.kukuri .l:hover{
+    margin-left: 20px;
+    transition: .4s cubic-bezier(0.9, 0.03, 0.04, 1.01);
+    cursor : pointer;
+}
+
+.kukuri .r:hover{
+    margin-right: 20px;
+     transition: .4s cubic-bezier(0.9, 0.03, 0.04, 1.01);
+    cursor : pointer;
+}
+
+.kukuri p:active{
+    transform: scale(0.9);
+    cursor : pointer;
+}
+
+/*---- mainnaka2 ----*/
+
+.frame{
+    border: none;
+    width: 824px;
+    height: 624px;
+    transform: scale(0.7);
+
+ background-image: url(tv.png);
+    z-index: 100000;
+    padding: 60px 60px 60px 60px;
+background-position: center;
+    background-size: cover;
+}
+
+.rpg{
+    border: none;
+    width: 824px;
+    height: 624px;
+
+
+
+    z-index: 100000;
+background-position: center;
+    background-size: cover;
+}
+
+.onoff{
+    position: absolute;
+    z-index: 100001;
+}
+
+.gamein{
+    width: 100%;
+    font-size: 60px;
+    margin-left: 80px;
+
+    margin-top: 30px;
+    height: 10%;
+
+    font-family: "myFont2";
+    text-shadow: 0.5px 0.5px #384fd6,1.0px 1.0px #384fd6,
+       1.5px 1.5px #384fd6, 2.0px 2.0px #384fd6,2.5px 2.5px #384fd6, 3.0px 3.0px #384fd6, 3.5px 3.5px #384fd6, 4.0px 4.0px #384fd6, 6.0px 6.0px #333;
+    color: #fff;
+}
+
+.gamein span{
+    margin-right: 30px;
+        padding: 8px;
+    text-align: center;
+    background-color: #384fd6;
+    box-shadow: 6.0px 6.0px #333;
+}
+
+.tskuru{
+
+    align-items: center;
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+}
+
+.tskuru .yazi{
+   font-family: "myFont2";
+
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px #e63c35,1.0px 1.0px #e63c35,
+       1.5px 1.5px #e63c35, 2.0px 2.0px #e63c35,2.5px 2.5px #e63c35, 3.0px 3.0px #e63c35, 3.5px 3.5px #e63c35, 4.0px 4.0px #e63c35, 6.0px 6.0px #333;
+    transition: .7s cubic-bezier(0.38, 0.6, 0.25, 1);
+    font-size: 60px;
+       cursor : pointer;
+}
+
+.tskuru .g_l:hover{
+   transform: translateX(-15px);
+    transition: .4s cubic-bezier(0.9, 0.03, 0.04, 1.01);
+    cursor : pointer;
+}
+
+.tskuru .g_l{
+    margin-left: 60px;
+    cursor : pointer;
+    transition: .4s cubic-bezier(0.9, 0.03, 0.04, 1.01);
+}
+
+.tskuru .g_r:hover{
+    transform: translateX(15px);
+    transition: .4s cubic-bezier(0.9, 0.03, 0.04, 1.01);
+    cursor : pointer;
+}
+
+.tskuru .g_r{
+    cursor : pointer;
+    margin-right: 60px;
+    transition: .4s cubic-bezier(0.9, 0.03, 0.04, 1.01);
+}
+
+.tskuru .yazi:active{
+    cursor : pointer;
+     font-size: 55px;
+}
+
 
 /*---- dailytop.container ----*/
 
@@ -514,6 +719,8 @@ transition-delay: ;
     flex-wrap: wrap;
     margin-left: 30px;
     justify-content: flex-start;
+   
+    will-change: transform;
 }
 
 .actives h1{
@@ -568,7 +775,7 @@ transition-delay: ;
 .a_list a:hover{
     box-shadow: 8px 8px 10px #33333344;
     transition: 1.0s ease;
-    margin-top: -15px;
+    transform: translateY(-15px);
 }
 
 .a_list a{
@@ -743,10 +950,12 @@ p.nena {
 
 footer{
     width: 100%;
-    height: 200px;
+    height: 40vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-image: url(footer.png);
+    background-size: cover;
 }
 
 .f_ber{
