@@ -397,13 +397,36 @@ body {
               <div class="main_naka2">
               <p class="gamein right" data-delighter><span>ゲ</span><span>ー</span><span>ム</span><span>作</span><span>品</span></p>
    <div class="tskuru top" data-delighter>
-       <p class="g_l yazi" onclick="plusGames(-1)" >＜</p><% @games.each do |game| %><div class="frame"><div class="onoff"><input type="button" value="ゲームを始める" onclick="gameFrame<%= game.id %>.src='<%= game.link %>'; gameFrame<%= game.id %>.focus();"/> <input type="button" value="ゲームを止める" onclick="gameFrame<%= game.id %>.src='';"/>
-                 <p><%= game.date %></p>
-                     <p><%= game.title %></p>
-                     <p><%= game.description %></p>
-                     <p><%= game.creator %></p>
-                 </div><iframe id="gameFrame<%= game.id %>" class="rpg" allowfullscreen src="" sandbox="allow-same-origin allow-scripts"></iframe></div><% end %><p onclick="plusGames(1)" class="g_r yazi">＞</p>
+       <p class="g_l yazi" onclick="plusGames(-1)" >＜</p><% @games.each do |game| %>
+       <div class="gamen">
+       <div class="frame"><div class="onoff">
+                 <p class="g_date"><%= game.date %></p>
+                     <p class="g_title"><%= game.title %></p>
+                     <p class="g_des"><%= game.description %></p>
+                     <p class="g_cre"><%= game.creator %></p>
+                 </div><iframe id="gameFrame<%= game.id %>" class="rpg" allowfullscreen src="" sandbox="allow-same-origin allow-scripts"></iframe></div>
+       <div class="control">
+           <button class="co_but launch"onclick="gameFrame<%= game.id %>.src='<%= game.link %>'; gameFrame<%= game.id %>.focus();"><p>ゲームを始める</p><div class="wing"></div></button><button class="stop co_but" onclick="gameFrame<%= game.id %>.src='';"><p>ゲームを止める</p><div class="wing"></div></button>
+          <p class="co_but gui">操作方法：　↑↓→←キー：進む　Xキー：メニュー</p>
+       </div>
+       </div>
+       <% end %><p onclick="plusGames(1)" class="g_r yazi">＞</p>
+
                   </div>
+                  <script>
+                  
+                  $('.launch').click(function(){
+                     $('.launch').addClass('running');
+                     $('.g_date').addClass('running'); $('.g_title').addClass('running'); $('.g_des').addClass('running'); $('.g_cre').addClass('running'); 
+                     $('.stop').addClass('yameru'); 
+                  });
+                      
+                    $('.stop').click(function(){
+                     $('.launch').removeClass('running');
+                     $('.g_date').removeClass('running'); $('.g_title').removeClass('running'); $('.g_des').removeClass('running'); $('.g_cre').removeClass('running'); 
+                     $('.stop').removeClass('yameru'); 
+                  });
+                  </script>
              </div>
          </div>
          

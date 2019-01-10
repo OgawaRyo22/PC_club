@@ -57,6 +57,24 @@ transition: 1.5s cubic-bezier(0.38, 0.6, 0.25, 1);
       opacity: 1;
 }
 
+.tskuru.delighter{
+transition: 1.5s cubic-bezier(0.38, 0.6, 0.25, 1);
+      transform: translateY(30%);
+      opacity: 0;
+}
+
+.tskuru.delighter.started{
+    transition: 1.5s cubic-bezier(0.38, 0.6, 0.25, 1);
+   transform: translateY(-6.5%);
+      opacity: 1;
+}
+
+.tskuru.delighter.started.ended{
+    transition: 1.5s cubic-bezier(0.38, 0.6, 0.25, 1);
+      transform: translateY(-6.5%);
+      opacity: 1;
+}
+
 
 
 body{
@@ -625,6 +643,172 @@ background-position: center;
 .onoff{
     position: absolute;
     z-index: 100001;
+     transition: .5s;
+    opacity: 1;
+}
+
+.onoff p{
+    color: #fff;
+    font-family: "myFont2";
+    font-size: 30px;
+    margin-top: 20px;
+    width: 80%;
+    letter-spacing: 10px;
+margin-left: 30px;
+    
+    font-kerning: 20px;
+}
+
+.g_title{
+    font-size: 60px!important;
+}
+
+.stop{
+    opacity: 0;
+    transition: .5s;
+}
+
+.gamen{
+     width: 944px;
+    display: flex;
+    flex-wrap: wrap;
+  
+    justify-content: center;
+}
+
+.co_but{
+  
+    font-family: "myFont2";
+    transition: .3s;
+    position: relative;
+    letter-spacing: 5px;
+    
+}
+
+.stop{
+   color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: none;
+}
+
+.stop p{
+       background-color: #e63c35;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 6px;
+    border: 1px #e63c35 solid;
+    width: 120px;
+    /* height: 38px; */
+    line-height: 38px;
+    border-radius: 6px;
+    z-index: 11;
+}
+
+.gui{
+    background-color: #fff;
+    border: 2px #333 solid;
+    color: #333;
+    box-shadow: 0px; 
+    height: 19px;
+    padding-top: 11.5px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    box-shadow: none;
+     padding-left: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    padding-right: 20px;
+    border-radius: 6px;
+    font-family: "myFont2";
+    letter-spacing: 5px;
+}
+
+.gui:hover{
+    box-shadow: none!important;
+}
+
+.launch{
+margin-right: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: none;
+}
+
+.launch p{
+       background-color: #384fd6;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 6px;
+    border: 1px #384fd6 solid;
+    width: 120px;
+    /* height: 38px; */
+    line-height: 38px;
+    border-radius: 6px;
+    z-index: 11;
+    
+}
+
+.control{
+       width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 40px;
+        margin-top: -110px;
+}
+
+.co_but:hover{
+    box-shadow: 0.5px 0.5px 0.5px #55555588;
+    transition: .3s;
+}
+
+.co_but:hover .wing{
+    background-color: #ffffff2e;
+    position: absolute;
+    left: 300px;
+    transform:skewX(-30deg);
+    transition: 0.9s ease;
+    transition-delay: 0.3s;
+    
+    z-index: -2;
+}
+
+.wing {
+    width: 80px;
+    height: 40px;
+    background-color: #ffffff2e;
+    position: absolute;
+    top: 0;
+    left: -90px;
+    transform: skewX(-30deg);
+    z-index: 1;
+    transition-delay: 0.5s;
+}
+
+.running{
+    transition: .5s;
+    opacity: 0;
+    display: none;
+}
+
+.yameru{
+    transition: .5s;
+    opacity: 1;
+    
 }
 
 .gamein{
